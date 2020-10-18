@@ -3,4 +3,5 @@ export default {
   secondary: "#55BCC9",
   titleText: "#FEFFFF",
   textInput: "#3FEEE6",
+  numberBorder: "#CAFAFE",
 };
