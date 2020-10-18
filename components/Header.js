@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Colors.titleText,
     fontSize: 20,
-    fontWeight: 'bold'
+    fontWeight: "bold",
+    fontFamily: "exo2",
   },
 });
 

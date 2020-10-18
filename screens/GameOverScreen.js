@@ -4,15 +4,18 @@ import { View, Text, StyleSheet, Button } from "react-native";
 const GameOverScreen = (props) => {
   return (
     <View style={styles.screen}>
-      <Text>The game is over!</Text>
-      <Text>Number of rounds: {props.numberOfRounds}</Text>
-      <Text>Number was: {props.numberFromUser}</Text>
+      <Text style={styles.gameOver}>The game is over!</Text>
+      <Text style={styles.gameOver}>Number of rounds: {props.numberOfRounds}</Text>
+      <Text style={styles.gameOver}>Number was: {props.numberFromUser}</Text>
       <Button title="NEW GAME" onPress={props.onRestart} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  gameOver: {
+    fontFamily: 'exo2'
+  },
   screen: {
     flex: 1,
     justifyContent: "center",

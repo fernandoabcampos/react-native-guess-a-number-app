@@ -62,7 +62,7 @@ const GameScreen = (props) => {
 
   return (
     <View style={styles.screen}>
-      <Text>Computer's Guess: </Text>
+      <Text style={styles.computerGuess}>Computer's Guess: </Text>
       <NumberContainer>{currentGuess}</NumberContainer>
       <Card style={styles.buttonContainer}>
         <Button title="LOWER" onPress={nextGuessHandler.bind(this, "lower")} />
@@ -82,6 +82,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width: 300,
     maxWidth: "80%",
+  },
+  computerGuess: {
+    fontFamily: "exo2",
   },
   screen: {
     flex: 1,

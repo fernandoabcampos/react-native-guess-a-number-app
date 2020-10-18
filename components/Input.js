@@ -13,6 +13,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     width: 1,
     marginVertical: 10,
+    fontFamily: 'exo2'
   },
 });
 
