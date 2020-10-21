@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Button, Image } from "react-native";
+import { View, StyleSheet, Button, Image, Text } from "react-native";
 import BodyText from "../components/BodyText";
 import Colors from "../constants/colors";
 
@@ -8,20 +8,26 @@ const GameOverScreen = (props) => {
     <View style={styles.screen}>
       <BodyText>The game is over!</BodyText>
       <View style={styles.imageContainer}>
-        <Image
-          source={require("../assets/success.jpg")}
-          style={styles.image}
-        />
+        <Image source={require("../assets/success.jpg")} style={styles.image} />
       </View>
 
-      <BodyText>Number of rounds: {props.numberOfRounds}</BodyText>
-      <BodyText>Number was: {props.numberFromUser}</BodyText>
+      <BodyText>
+        Number of rounds:{" "}
+        <Text style={styles.highlight}>{props.numberOfRounds}</Text>
+      </BodyText>
+      <BodyText>
+        Number informed was:{" "}
+        <Text style={styles.highlight}>{props.numberFromUser}</Text>
+      </BodyText>
       <Button title="NEW GAME" onPress={props.onRestart} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  highlight: {
+    color: Colors.primary,
+  },
   image: { width: "100%", height: "100%" },
   imageContainer: {
     width: 300,
