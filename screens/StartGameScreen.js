@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import Card from "../components/Card";
 import Input from "../components/Input";
+import MainButton from "../components/MainButton";
 import NumberContainer from "../components/NumberContainer";
 import Colors from "../constants/colors";
 
@@ -48,9 +49,9 @@ const StartGameScreen = (props) => {
       <Card style={styles.summaryContainer}>
         <Text style={styles.subtitle}>You selected</Text>
         <NumberContainer>{selectedNumber}</NumberContainer>
-        <Button
+        <MainButton
           title="START GAME"
-          onPress={() => props.onStartGame(selectedNumber)}
+          onMainPress={() => props.onStartGame(selectedNumber)}
         />
       </Card>
     );
