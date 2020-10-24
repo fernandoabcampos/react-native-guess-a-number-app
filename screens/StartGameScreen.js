@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   Keyboard,
   Alert,
+  Dimensions
 } from "react-native";
 import Card from "../components/Card";
 import Input from "../components/Input";
@@ -101,7 +102,8 @@ const StartGameScreen = (props) => {
 
 const styles = StyleSheet.create({
   button: {
-    width: "40%",
+    //width: "40%",
+    width: Dimensions.get('window').width / 4
   },
   buttonContainer: {
     flexDirection: "row",
@@ -132,7 +134,7 @@ const styles = StyleSheet.create({
     fontFamily: "exo2",
   },
   title: {
-    fontSize: 22,
+    fontSize: 20,
     marginVertical: 10,
     fontFamily: "exo2",
   },

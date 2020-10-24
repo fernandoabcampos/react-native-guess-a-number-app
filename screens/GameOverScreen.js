@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Image, Text } from "react-native";
+import { View, StyleSheet, Image, Text, Dimensions } from "react-native";
 import BodyText from "../components/BodyText";
 import MainButton from "../components/MainButton";
 import Colors from "../constants/colors";
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
   },
   image: { width: "100%", height: "100%" },
   imageContainer: {
-    width: 300,
-    height: 300,
+    width: Dimensions.get('window').width * 0.7,
+    height: Dimensions.get('window').height * 0.7,
     margin: 10,
     overflow: "hidden",
     borderRadius: 150,
