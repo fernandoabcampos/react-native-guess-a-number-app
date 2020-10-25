@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { SafeAreaView, StyleSheet } from "react-native";
 import Header from "./components/Header";
 import * as Font from "expo-font";
 import { AppLoading } from "expo";
@@ -10,7 +10,7 @@ import GameOverScreen from "./screens/GameOverScreen";
 
 const fetchFonts = () => {
   return Font.loadAsync({
-    "exo2": require("./assets/fonts/Exo2-Light.ttf"),
+    exo2: require("./assets/fonts/Exo2-Light.ttf"),
   });
 };
 export default function App() {
@@ -57,10 +57,10 @@ export default function App() {
   }
 
   return (
-    <View style={styles.screen}>
+    <SafeAreaView style={styles.screen}>
       <Header title="Guess a Number" />
       {content}
-    </View>
+    </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({

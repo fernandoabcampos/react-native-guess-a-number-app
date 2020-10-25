@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
   },
   image: { width: "100%", height: "100%" },
   imageContainer: {
-    width: Dimensions.get('window').width * 0.7,
-    height: Dimensions.get('window').height * 0.7,
+    width: Dimensions.get("window").width * 0.7,
+    height: Dimensions.get("window").height * 0.7,
     margin: 10,
     overflow: "hidden",
     borderRadius: 150,
